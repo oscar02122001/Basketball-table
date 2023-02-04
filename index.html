@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketboll Scoreboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="scored-table">
+            <div class="wrapper">
+                <div class="home-clmn">
+                    <h2 class="name">HOME</h2>
+                    <p class="count" id="home-table">0</p>
+                    <button class="btn" id="home-one" onclick="homeone()">+1</button>
+                    <button class="btn" id="home-two" onclick="hometwo()">+2</button>
+                    <button class="btn" id="home-three" onclick="homethree()">+3</button>
+                </div>
+                <div class="live-period">
+                    <p class="live-text">Period</p>
+                    <p class="live-set" id="live-set">0</p>
+                </div>
+                <div class="guest-clmn">
+                    <h2 class="name">GUEST</h2>
+                    <p class="count" id="guest-table">0</p>
+                    <button class="btn" id="guest-one" onclick="guestone()">+1</button>
+                    <button class="btn" id="guest-two" onclick="guesttwo()">+2</button>
+                    <button class="btn" id="guest-three" onclick="guestthree()">+3</button>
+                </div>
+            </div>
+
+            <div class="periods">
+                <button class="new-game" onclick="newgame()">NEW GAME</button>
+                <div class="sets">
+                    <div class="set">
+                        <button class="set-text"  onclick="setOne()">SET 1</button>
+                        <div class="set-score">
+                            <p class="home-score" id="one-score" >00:00</p>
+                            <!-- <p class="guest-score"id="one-score">00</p> -->
+                        </div>
+                    </div>
+                    <div class="set">
+                        <button class="set-text" onclick="setTwo()">SET 2</button>
+                        <div class="set-score">
+                            <p class="home-score" id="two-score">00:00</p>
+                            <!-- <p class="guest-score">00</p> -->
+                        </div>
+                    </div>
+                    <div class="set">
+                        <button class="set-text" onclick="setThree()">SET 3</button>
+                        <div class="set-score">
+                            <p class="home-score" id="three-score">00:00</p>
+                        </div>
+                    </div>
+                    <div class="set">
+                        <button class="set-text"  onclick="setFour()">SET 4</button>
+                        <div class="set-score">
+                            <p class="home-score" id="four-score">00:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

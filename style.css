@@ -1,0 +1,204 @@
+@font-face {
+    font-family: 'Verdana';
+    src: url('fonts/Verdana-Bold.woff2') format('woff2'),
+        url('fonts/Verdana-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Timer';
+    src: url('fonts/CursedTimerULiL.woff2') format('woff2'),
+        url('fonts/CursedTimerULiL.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(2, 0, 10);
+    background-image: url("img/download.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: left top; */
+    /* object-fit: contain; */
+}
+
+.scored-table {
+    position: absolute;
+    /* display: flex;
+    justify-content: center; */
+    text-align: center;
+    padding: 68px 83px 140px 82px;
+    align-items: center;
+    width: 775px;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: rgba(#eee, 0.4); */
+    background-color: rgba(240, 240, 240, 0.323);
+    border-radius: 5px;
+
+
+}
+
+.wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+}
+
+.home-clmn {
+    margin-right: 100px;
+    text-align: center;
+    align-items: center;
+}
+
+.guest-clmn {
+
+    text-align: center;
+    align-items: center;
+}
+
+.name {
+    font-family: 'Verdana';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 36px;
+    margin-bottom: 21px;
+    text-align: center;
+    color: #EEE;
+}
+
+.count {
+    font-family: 'Timer';
+    font-weight: 400;
+    font-size: 90px;
+    line-height: 127px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    align-items: center;
+    background-color: #080001;
+    color: #F94F6D;
+    border-radius: 5px;
+}
+.live-period{
+    display: flex;
+    flex-direction: column-reverse;
+    position: absolute;
+    top: 57%;
+    left: 49.5%;
+    transform: translate(-50%, -50%);
+}
+.live-set{
+    font-family: 'Timer';
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 67px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    background-color: #080001;
+    color: #F94F6D;
+    border-radius: 5px;
+
+}
+.live-text{
+    font-family: 'Verdana';
+    font-size: 20px;
+    line-height: 24px;
+    color: #EEE;
+   
+}
+.win-count {
+    color: #059669;
+}
+
+.btn {
+    font-family: 'Timer';
+    margin-right: 11px;
+    padding: 9px 8px 10px 7px;
+    margin-top: 26px;
+    background-color: transparent;
+    border: 2px solid #9AABD8;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #EEE;
+
+}
+
+.btn:nth-of-type(3) {
+    margin-right: 0;
+}
+
+
+.new-game {
+    padding: 7px 15px;
+    border: none;
+    background-color: transparent;
+    color: #059669;
+    font-family: 'Verdana';
+    font-size: 35px;
+    border: 2px solid #059669;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.periods {
+    /* position: absolute; */
+    margin-top: 40px;
+    text-align: center;
+}
+
+.sets {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    text-align: center;
+    align-items: center;
+}
+
+/* .set {
+    margin-right: 20px;
+} */
+
+.set:nth-of-type(4) {
+    margin-right: 0;
+}
+
+.set-text {
+    /* border: 2px solid #eee; */
+    border: none;
+    background-color: transparent;
+    color: #eee;
+    font-family: 'Verdana';
+    font-size: 25px;
+    line-height: 40px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.set-score {
+    display: flex;
+    justify-content: center;
+}
+
+.home-score,
+.guest-score {
+    font-family: 'Timer';
+    font-size: 35px;
+    color: #F94F6D;
+}
